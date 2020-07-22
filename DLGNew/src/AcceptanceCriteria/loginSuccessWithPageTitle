@@ -1,0 +1,17 @@
+Title: Login Verification
+
+Feature: As a user, I want to be able to login with the correct credentials to my account, so that I can verify that my login is successful
+
+Acceptance criteria
+
+Upon successful login, I should be directed to the homepage and see the page title contains “QA Interview Test | DLG Digital"”
+
+
+Scenario: Login Verification
+
+Given: I am on chrome browser and navigate to the login page "https://login.dev.qa-experience.com"
+When:  I enter Username as "test@qa-experience.com"
+And:   I enter password as “Password1”
+Then:  Login should pass
+And:   I should be directed to the Home-Page
+And:   I should see title of page which contains "QA Interview Test | DLG Digital"
